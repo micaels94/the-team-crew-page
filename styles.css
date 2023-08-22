@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+
+:root{
+    --title-font: "PT Serif", serif; 
+    --main-font: "Poppins", sans-serif;
+}
+ 
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .content {
+    width: 1440px;
+    margin: 0 auto;
+    border: 1px solid green;
+  }
+ 
+ body {
+    width: 100%;
+    background-color: #FAFAFA;
+
+    border: 2px solid red;
+}
+
+header{
+    margin-top: 110px;
+    display: flex;
+   justify-content: center;
+}
+
+#title{
+    font-family: var(--title-font);
+    width: 278px;
+    height: 47px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 47.7px;
+    letter-spacing: -4.5%;
+    border: 1px solid red;
+}
+
+#right-side-header{
+    margin-left: 215px;
+}
+
+#header-subtitle{
+    font-family: var(--main-font);
+    width: 117px;
+    height: 27px;
+    font-weight: 600;
+    font-size: 18px;
+
+}
+
+#header-description{
+    font-family: var(--main-font);
+    width: 439px;
+    height: 87px;
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+
+#crew-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 1440px;
+    border: 2px solid yellow;
+}
+
+#top-photos-wrapper{
+   width: 932px; 
+   display: flex;
+   justify-content: space-evenly;
+   border: 1px solid purple;
+
+}
+
+#bottom-photos-wrapper{
+    width: 932px; 
+   display: flex;
+   justify-content: space-evenly; 
+}
+
+#crew-container > figure{
+    width: 264px;
+    height: 383px;
+}
+
+.crew-member-photo{
+    width: 238px;
+    height: 341px;
+}
+
+#crew-member-name{
+    font-family: var(--main-font);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 27px;
+    width: 117px;
+    height: 27px;
+}
+
+#rotated-caption{
+    transform: rotate(90deg);
+    transform-origin: right top;
+    white-space: nowrap;
+    font-family: var(--title-font);
+    font-size: 12px;
+    font-weight: 400;
+    width: 102px;
+    height: 16px;
+    line-height: 15.9px;
+    color: #000; 
+}
+
+.down-photo{
+    margin-top: 99px;
+}
