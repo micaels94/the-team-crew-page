@@ -141,6 +141,10 @@ header{
     margin-top: 99px;
 }
 
+#mobile-version{
+    display: none;
+}
+
 /* styling the footer */
 
 footer{
@@ -176,32 +180,47 @@ footer {
 
 @media (max-width: 375px) {
     .content{
-        width: 375px;
-
+        width: 363px;
+        height: 1409px;
+        margin-left: 12px;
     }
+
+    #crew-container{
+        display: none;
+    }
+
+    #mobile-version{
+        display: flex;
+        width: 355px;
+        margin-top: -22px;
+    }
+
     header{
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
-    #title-container{
-        width: 278px;
 
+    #title-container{
+        width: 358px;
+        margin: 0;
     }
+
     #title{
-        width: 278px;
+        width: 318px;
         height: 47px;
         font-size: 36px;
         font-weight: 700;
         line-height: 47.7px;
         letter-spacing: -4.5%;
+        margin-top: 71px;
     }
 
     #right-side-header{
-        margin-top: 156px;{
-
+        margin-top: 38px;
+        margin-left: 0;
     }
     #header-subtitle{
-
         text-transform: uppercase;
         width: 117px;
         height: 27px;
@@ -210,6 +229,7 @@ footer {
         line-height: 27px;
         color: #000;
     }
+
     #header-description{
         width: 333px;
         height: 87px;
@@ -217,8 +237,48 @@ footer {
         font-size: 14px;
         line-height: 21px;
         color: #000;
+        margin-top: 10px;
     }
 
+    .mobile-crew-member-photo{
+        width: 148.72px;
+        height: 219px;
+        margin-top: 64px;
+    }
+
+    #left-photos-wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #right-photos-wrapper{
+        display: flex;
+        flex-direction: column;
+        margin-left: 32px;
+        margin-top: 48px;
+    }
+
+    #mobile-crew-member-name{
+        font-family: var(--main-font);
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 21px;
+        width: 128px;
+        height: 18px;
+    }
+
+    #mobile-rotated-caption{
+        transform: rotate(90deg);
+        font-family: var(--title-font);
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 13.25px;
+        position: absolute;
+        width: 130px;
+        text-transform: uppercase;
+        margin-left: 95px;
+        margin-top: -182px;
+    }
 
 
 
